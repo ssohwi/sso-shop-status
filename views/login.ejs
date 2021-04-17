@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>ShopStatus</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
+
+<body>
+<div id="wrap">
+    <div style="text-align: center; color:#ff0000; margin-top: 2%">
+        <!--만약 message의 길이가 0보다 길면 message를 띄워라-->
+        <% if(message.length > 0) { %>
+            <%= message %>
+        <% } %>
+    </div>
+    <form action="/login" method="POST" class="signupform">
+        <label for="email">E-MAIL</label>
+        <input name="email" type="email" required />
+        <label for="password">PASSWORD</label>
+        <input name="password" type="password" required />
+        <button class="btn">LOGIN!</button>
+    </form>
+</div>
+</body>
+
+</html>

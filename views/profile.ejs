@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+</head>
+
+<body>
+<div id="wrap">
+    {% if user and user.id %}
+    <div class="user-name">{{'안녕하세요!' + user.name + '님'}}</div>
+    <a id="logout" href="/auth/logout" class="btn">LOGOUT</a>
+    {% else %}
+    <div class="user">
+        <input type="button" class="btn" onclick=" location.href='/login'" value="LOGIN"/>
+        <input type="button" class="btn" onclick=" location.href='/signup'" value="SIGNUP"/>
+        <input type="button" class="btn" onclick=" location.href='/logout'" value="LOGOUT"/>
+    </div>
+</div>
+</body>
+
+</html>

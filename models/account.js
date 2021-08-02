@@ -1,12 +1,16 @@
 const mongoose = require('mongoose');
 
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 // 생성자
-const userSchema = new Schema({
+const Account = new Schema({
     email: {
         type: String,
         required: true,
         unique: true,
+    },
+    super: {
+        type: Boolean,
+        default: false,
     },
     password: {
         type: String,
@@ -20,11 +24,9 @@ const userSchema = new Schema({
         type: Date,
         default: Date.now,
     },
-    provider: {
-        type: String,
-        required: false,
-        default: 'local',
-    }
+    updatedAt: {
+        type: Date,
+    },
 });
 
-module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('Account', Account);

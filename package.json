@@ -1,15 +1,13 @@
 {
-  "name": "pam",
+  "name": "sso-shop-status",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
-    "bootstrap": "^5.0.1",
     "connect-mongodb-session": "^2.4.1",
     "cookie-parser": "~1.4.4",
-    "crawler": "^1.3.0",
     "crypto": "^1.0.1",
     "debug": "~2.6.9",
     "dotenv": "^9.0.2",
@@ -23,17 +21,17 @@
     "passport-local": "^1.0.0",
     "pug": "2.0.0-beta11"
   },
-  "description": "Personal Automation waste-sorting Machine",
+  "description": "sso-shop-status",
   "main": "app.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wltn999/PAM.git"
+    "url": "git+https://github.com/wltn999/sso-shop-status.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wltn999/PAM/issues"
+    "url": "https://github.com/wltn999/sso-shop-status/issues"
   },
-  "homepage": "https://github.com/wltn999/PAM#readme"
+  "homepage": "https://github.com/wltn999/sso-shop-status#readme"
 }
